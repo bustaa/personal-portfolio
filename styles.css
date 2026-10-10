@@ -1,0 +1,167 @@
+/* 1. Variables */
+
+:root {
+  /* Backgrounds */
+  --color-bg: #0B0D0F;
+  --color-surface: #15181B;
+  --color-card: #202428;
+
+  /* Borders and details */
+  --color-border: #383E44;
+  --color-steel: #858C93;
+  --color-silver: #D7DADD;
+
+  /* Text */
+  --color-text: #F5F6F7;
+  --color-text-muted: #B7BCC2;
+
+  /* Red Colors */
+  --color-rs-red: #E30613;
+  --color-rs-red-link: #FF4D57;
+  --color-rs-red-hover: #B50912;
+  
+  /* Typography */
+  --font-heading: "Barlow Condensed", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Font sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --fotn-size-3xl: 2rem;
+
+  /* Responsive sizes */
+  --font-size-4xl: clamp(2rem, 4vw, 3rem);
+  --font-size-hero: clamp(2.5rem, 6vw, 5rem);
+  --font-size-spec: clamp(2.5rem, 4vw, 4rem);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  /* Backgrounds */
+  --color-bg: #F5F6F7;
+  --color-surface: #FFFFFF;
+  --color-card: #FFFFFF;
+
+  /* Borders and details */
+  --color-border: #D7DADD;
+  --color-steel: #596169;
+  --color-silver: #AEB4BA;
+
+  /* Text */
+  --color-text: #15181B;
+  --color-text-muted: #4B535B;
+
+  /* Red Colors */
+  --color-rs-red: #E30613;
+  --color-rs-red-link: #C90010;
+  --color-rs-red-hover: #B50912;
+
+  /* Outline */
+  --color-border-strong: #858C93;
+}
+
+/* 2. Reset y estilos base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+}
+
+p {
+  line-height: 1.6;
+}
+
+button {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+footer {
+  margin-top: auto;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-muted);
+  text-align: center;
+  font-size: var(--font-size-sm);
+}
+
+/* 3. Layout */
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top-left {
+  display: flex;
+}
+
+.header-top-nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5px;
+}
+
+.header-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-container {
+  display: flex;
+}
+
+.reviews-container ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.review blockquote {
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+/* 5. Navegación */
+
+/* 6. Componentes */
+
+/* 7. Formulario */
+
+/* 8. Responsive */
