@@ -2,6 +2,7 @@ const root = document.documentElement;
 const themeToggle = document.querySelector("#theme-toggle");
 const savedTheme = localStorage.getItem("site-theme");
 const themeIcon = document.querySelector("#theme-icon");
+const assetsPath = new URL("../assets/", document.currentScript.src);
 
 root.dataset.theme =
   savedTheme === "light" || savedTheme === "dark"
@@ -11,9 +12,10 @@ root.dataset.theme =
 function updateThemeButton() {
   const isLight = root.dataset.theme === "light";
 
-  themeIcon.src = isLight
-    ? "/assets/light-icon.svg"
-    : "/assets/dark-icon.svg";
+  themeIcon.src = new URL(
+    isLight ? "light-icon.svg" : "dark-icon.svg",
+    assetsPath
+  ).href;
 }
 
 updateThemeButton();
