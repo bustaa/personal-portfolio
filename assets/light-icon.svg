@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Modo claro</title>
+  <g stroke="#E30613" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="3.4"/>
+    <path d="M12 2.7v2.1M12 19.2v2.1M2.7 12h2.1M19.2 12h2.1M5.42 5.42l1.5 1.5M17.08 17.08l1.5 1.5M18.58 5.42l-1.5 1.5M6.92 17.08l-1.5 1.5"/>
+  </g>
+  <path d="M2.3 18.9h3.1M1.5 21.4h4.6" stroke="#E30613" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
