@@ -39,7 +39,7 @@
   --font-size-lg: 1.125rem;
   --font-size-xl: 1.25rem;
   --font-size-2xl: 1.5rem;
-  --fotn-size-3xl: 2rem;
+  --font-size-3xl: 2rem;
 
   /* Responsive sizes */
   --font-size-4xl: clamp(2rem, 4vw, 3rem);
@@ -253,6 +253,10 @@ a:hover {
   border-bottom: 1px solid var(--color-border);
 }
 
+.projects ul li:last-child {
+  border-bottom: none;
+}
+
 .work-experience {
   border: 1px solid var(--color-border);
   padding: 1rem;
@@ -270,6 +274,10 @@ a:hover {
   border-bottom: 1px solid var(--color-border);
 }
 
+.work-experience ul li:last-child {
+  border-bottom: none;
+}
+
 .education {
   border: 1px solid var(--color-border);
   padding: 1rem;
@@ -283,11 +291,7 @@ a:hover {
   gap: 0.5rem;
 }
 
-/* 5. Navegación */
-
-/* 6. Componentes */
-
-/* 7. Formulario */
+/* 4. Formulario */
 
 .contact-form {
   background-color: var(--color-card);
@@ -357,7 +361,7 @@ a:hover {
   background-color: var(--color-rs-red-hover);
 }
 
-/* 8. Responsive */
+/* 5. Responsive */
 
 /* Tablets and mobiles */
 @media (max-width: 768px) {
@@ -411,23 +415,16 @@ a:hover {
   }
 
   .header-top-nav li:last-child {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0.5rem 0;
-  }
-
-  .header-top-nav a {
-    display: block;
-    padding: 0.5rem 0;
-  }
-
-  .header-top-nav li:last-child {
     flex: 0 0 100%;
     display: flex;
     justify-content: center;
     border-top: none;
     padding: 0.25rem 0 0.5rem;
+  }
+
+  .header-top-nav a {
+    display: block;
+    padding: 0.5rem 0;
   }
 
   .header-bottom {
@@ -500,7 +497,7 @@ a:hover {
   }
 
   .header-bottom h1 {
-    font-size: clamp(1.9rem, 9vh, 2.5rem);
+    font-size: clamp(1.9rem, 9vw, 2.5rem);
   }
 
 }

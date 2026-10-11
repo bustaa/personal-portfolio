@@ -12,8 +12,8 @@ function updateThemeButton() {
   const isLight = root.dataset.theme === "light";
 
   themeIcon.src = isLight
-    ? "../assets/light-icon.svg"
-    : "../assets/dark-icon.svg";
+    ? "/assets/light-icon.svg"
+    : "/assets/dark-icon.svg";
 }
 
 updateThemeButton();
